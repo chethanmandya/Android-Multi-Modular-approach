@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Application_1</string>
+    <string name="title_dynamicfeature">Bookmark</string>
+    <string name="title_bookmark">Bookmark</string>
+    <string name="title_interactiveguide">Interactive Guide</string>
+    <string name="title_featurepostitemsforsale">Post items for sale</string>
+    <string name="title_featurepaymentmethodonconditionaldelivery">Payment Method on Conditional
+          Delivery
+      </string>
+    <string name="title_dynamicfeatureinteractiveguidemanageinstalled">Interactive Guide Manage
+          Installed
+      </string>
+    <string name="title_dynamicfeaturetrynowinstantdelivery">Try Now Instant Delivery</string>
+</resources>

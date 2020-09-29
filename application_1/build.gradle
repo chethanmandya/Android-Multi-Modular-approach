@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply from: rootProject.file('gradle/common.gradle')
+apply from: rootProject.file('gradle/view-common.gradle')
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.chethan.application_1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dynamicFeatures = [':dynamicFeatureInteractiveGuideManageInstalled', ':dynamicFeaturePostItemsForSaleOnDemandDelivery', ':dynamicFeaturePaymentMethodOnConditionalDelivery', ':dynamicFeatureInteractiveGuideManageInstalled', ':dynamicfeatureTryNowInstantDelivery']
+
+
+}
+
+dependencies {
+    implementation project(":features:splashScreen")
+    implementation project(":features:myProfile")
+    implementation project(":features:home")
+    implementation project(":features:onboarding")
+    implementation project(":features:privacyPolicy")
+    implementation project(":features:termsAndCondition")
+    implementation project(":features:userLogin")
+    implementation project(":features:aboutTheApp")
+    implementation project(":common:navigatory")
+
+
+}
+

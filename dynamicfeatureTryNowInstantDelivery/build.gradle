@@ -1,0 +1,14 @@
+plugins {
+    id 'com.android.dynamic-feature'
+    id 'kotlin-android'
+}
+
+apply from: rootProject.file('gradle/common.gradle')
+apply from: rootProject.file('gradle/view-common.gradle')
+
+
+dependencies {
+    implementation project(":application_1")
+    implementation project(":common:views")
+    implementation project("::common:navigatory")
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_fragment"
+    app:startDestination="@+id/toSplashFragment">
+
+
+    <fragment
+        android:id="@+id/InteractiveGuide"
+        android:name="com.chethan.dynamicfeatureinteractiveguidemanageinstalled.InteractiveGuide"
+        android:label="FeatureFragment"
+        tools:layout="@layout/fragment_interactive_guide">
+        <deepLink app:uri="DynamicFeature://InteractiveGuideManageInstalled" />
+
+        <action
+            android:id="@+id/action_interactive_to_payment"
+            app:destination="@id/paymentMethod" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/paymentMethod"
+        android:name="com.chethan.featurepaymentmethodonconditionaldelivery.PaymentMethod"
+        android:label="PaymentMethod"
+        tools:layout="@layout/fragment_payment_method_guide">
+        <deepLink app:uri="DynamicFeature://PaymentMethodOnConditionalDelivery" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/toHome"
+        android:name="com.chethan.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/toMyProfileFragment"
+        android:name="com.chethan.myprofile.MyProfileFragment"
+        android:label="MyProfileFragment"
+        tools:layout="@layout/fragment_my_profile">
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/toOnBoardingFragment"
+        android:name="com.chethan.onboarding.OnBoardingFragment"
+        android:label="OnBoardingFragment"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/toPrivacyPolicyFragment"
+        android:name="com.chethan.privacypolicy.PrivacyPolicyFragment"
+        android:label="PrivacyPolicyFragment"
+        tools:layout="@layout/fragment_privacy_policy">
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/toSplashFragment"
+        android:name="com.chethan.splashscreen.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash">
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/toTermsAndConditionFragment"
+        android:name="com.chethan.termsandcondition.TermsAndConditionFragment"
+        android:label="TermsAndConditionFragment"
+        tools:layout="@layout/fragment_terms_and_conditions">
+    </fragment>
+
+    <fragment
+        android:id="@+id/toLoginFragment"
+        android:name="com.chethan.userlogin.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+    </fragment>
+
+</navigation>
