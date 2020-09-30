@@ -11,10 +11,10 @@ They only know about the app module.
 The benefit of using this approach is huge. For one, we have an architecture that will be so easy to scale because adding a new feature will not affect other parts 
 of the code. Working in a team? Each team member can work on separate feature reducing the chances of something breaking in other places.
 
-This project will help you to learn how the dynamic feature or any feature module are made . more importantly you learn the way of navigation between this module. 
+This project will help you to learn how the dynamic feature or any feature module are made . more importantly you learn the way of navigating between these module. 
 
 
-###How dynamic Feature Modules Work
+### How dynamic Feature Modules Work
 
 Another benefit of dynamic delivery is that your app doesn’t have to install all at once. Instead, you break it down into pieces that install on demand.
 
