@@ -14,13 +14,13 @@ of the code. Working in a team? Each team member can work on separate feature re
 This project will help you to learn how the dynamic feature or any feature module are made . more importantly you learn the way of navigation between this module. 
 
 
-How dynamic Feature Modules Work
+###How dynamic Feature Modules Work
 
 Another benefit of dynamic delivery is that your app doesn’t have to install all at once. Instead, you break it down into pieces that install on demand.
 
 This is possible with mechanism in Dynamic Delivery called split APK.
 
-Split APKs are available on Android 5.0 and higher.
+***Split APKs*** are available on Android 5.0 and higher.
 Split APKs are similar to regular APKs, except they contain only a part of your app. Android is able to treat multiple split APKs as a single app. This enables you to break up your app into smaller chunks that download and install when required.
 
 There are three types of split APKs:
